@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Restaurant.Views.CustomViews.DetailAndOrderPage"
+             Title="Chi tiết món ăn"
+             BackgroundColor="White">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="carts.png" Command="{Binding WatchCartCommand}"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout Padding="10">
+        <StackLayout Orientation="Horizontal" >
+            <Image Source="{Binding Food.ImageUrl}" Aspect="AspectFill"  WidthRequest="170" Margin="0,10,0,0"/>
+            <StackLayout >
+                <Label Text="{Binding Food.Name}" TextColor="Blue" FontSize="20" FontAttributes="Bold" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Giá:" TextColor="Red"/>
+                    <Label Text="{Binding Food.Price}" TextColor="Red"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Trạng thái: " TextColor="Black"/>
+                    <Label Text="{Binding Food.Amount}" TextColor="Black"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Số lượng:" TextColor="Black"/>
+                    <Label Text="{Binding Source={x:Reference stepper},Path=Value }" TextColor="Black"/>
+                </StackLayout>
+                <Stepper Minimum="0" Maximum="100"  x:Name="stepper" HeightRequest="50" Value="{Binding Number,Mode=TwoWay}"/>
+               
+            </StackLayout>
+        </StackLayout>
+        <Label Text="Mô tả" TextColor="Green" FontAttributes="Bold"/>
+        <Label Text="{Binding Food.Description}" FontAttributes="Italic" TextColor="Black"/>
+        <Frame HasShadow="False">
+            <Button Text="Thêm vào giỏ hàng" CornerRadius="10" Command="{Binding AddToCartCommand}"/>
+        </Frame>
+        
+    </StackLayout>
+    
+</ContentPage>

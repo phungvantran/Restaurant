@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Restaurant.Views.HomePage"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             Title="Trang chủ"
+             x:Name="page"
+             BackgroundColor="White">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="carts.png" Command="{Binding WatchCartCommand}"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <!--SelectionChangedCommand="{Binding Source={x:Reference page}, Path=ViewModel.SelectFoodCommand}"
+                        SelectionChangedCommandParameter="{Binding .}"-->
+            <Label Text="Tất cả món ăn" TextColor="Black" Margin="20" FontAttributes="Bold" HeightRequest="30" />
+        <CollectionView ItemsSource="{Binding Foods}"
+                        SelectionMode="Single"
+                        SelectedItem="{Binding SelectedFood}"
+                        SelectionChanged="OnSelectFood"
+                        >
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="2"
+                                 VerticalItemSpacing="10"
+                                 HorizontalItemSpacing="10">
+                </GridItemsLayout>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <!-- <controls:CircleImage Source="{Binding ImageUrl}" WidthRequest="100" Aspect="AspectFill"/>-->
+                        <Image Source="{Binding ImageUrl}" Aspect="AspectFill" HeightRequest="150"/>
+                        <StackLayout>
+                            <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="Blue" HorizontalTextAlignment="Center"/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
+                                <Label Text="Giá:" TextColor="Red" />
+                                <Label Text="{Binding Price}" TextColor="Red" HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                            
+                        </StackLayout>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

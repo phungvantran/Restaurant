@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Restaurant.Views.CustomViews.CartPage"
+             x:Name="page"
+             BackgroundColor="White"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             Title="Giỏ hàng">
+    <StackLayout Padding="20">
+        <Frame BackgroundColor="Transparent" Margin="100" HasShadow="False">
+            <Label Text="Giỏ hàng của bạn đang trống" IsVisible="{Binding Source={x:Reference lst },Path=IsVisible}"/>
+        </Frame>
+       
+            <ListView ItemsSource="{Binding ListCast}" RowHeight="90" HeightRequest="400" SeparatorColor="Green" x:Name="lst" IsVisible="{Binding}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <controls:CircleImage Aspect="AspectFill" Source="{Binding ImageUrl}" WidthRequest="120" HeightRequest="130"/>
+                                <StackLayout>
+                                    <Label Text="{Binding Name}" TextColor="Black" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Price}" TextColor="Red"/>
+                                    <Label Text="{Binding Amount}" TextColor="Black"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,0,0,0">
+            <Label Text="Tổng tiền: " TextColor="Blue" FontSize="25"/>
+            <Label Text="{Binding Money}" VerticalOptions="Center" FontSize="25" TextColor="Red"/>
+        </StackLayout>
+        
+            <Button Text="Đặt món" CornerRadius="10"/>
+            <Button Text="Tiếp tục mua hàng" CornerRadius="10" Command="{Binding ContinueCommand}"/>
+        
+    </StackLayout>
+    
+    
+    
+    
+   
+</ContentPage>

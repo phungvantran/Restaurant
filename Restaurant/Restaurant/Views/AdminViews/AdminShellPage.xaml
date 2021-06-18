@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Restaurant.Views"
+             x:Class="Restaurant.Views.AdminShellPage">
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Image Source="https://i.pinimg.com/originals/74/6e/e7/746ee75483797c55e2af64de38572060.png"/>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    
+    <FlyoutItem Title="Món ăn" Icon="icon_food.jpg">
+        <ShellContent ContentTemplate="{DataTemplate local:FoodsPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Nhân viên" Icon="icon_staff.jpg">
+        <ShellContent ContentTemplate="{DataTemplate local:StaffsPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Báo cáo" Icon="icon_baocao.jpg">
+        <ShellContent/>
+    </FlyoutItem>
+    <FlyoutItem Title="Tính lương" Icon="icon_luong.jpg">
+        <ShellContent/>
+    </FlyoutItem>
+    <FlyoutItem Title="Thống kê" Icon="icon_thongke.jpg">
+        <ShellContent/>
+    </FlyoutItem>
+    <MenuItem Text="Đăng xuất" IconImageSource="icon_logout.jpg" Clicked="OnLogoutClick"/>
+</Shell>

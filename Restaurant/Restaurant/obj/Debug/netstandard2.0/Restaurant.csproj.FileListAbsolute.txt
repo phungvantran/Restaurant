@@ -1,0 +1,37 @@
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.csprojAssemblyReference.cache
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\obj\Debug\netstandard2.0\App.xaml.g.cs
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\obj\Debug\netstandard2.0\Views\FoodDetailPage.xaml.g.cs
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\obj\Debug\netstandard2.0\Views\FoodsPage.xaml.g.cs
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.AssemblyInfoInputs.cache
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.AssemblyInfo.cs
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.csproj.CoreCompileInputs.cache
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.dll
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\obj\Debug\netstandard2.0\ref\Restaurant.dll
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.pdb
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\bin\Debug\netstandard2.0\Restaurant.deps.json
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\bin\Debug\netstandard2.0\Restaurant.dll
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\bin\Debug\netstandard2.0\ref\Restaurant.dll
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\bin\Debug\netstandard2.0\Restaurant.pdb
+G:\FILE TRƯƠNG TRÌNH CÁC NGÔN NGỮ\XAMARIN\Restaurant\Restaurant\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.csprojAssemblyReference.cache
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.AssemblyInfoInputs.cache
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.AssemblyInfo.cs
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.csproj.CoreCompileInputs.cache
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.dll
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\ref\Restaurant.dll
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Restaurant.pdb
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\bin\Debug\netstandard2.0\Restaurant.deps.json
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\bin\Debug\netstandard2.0\Restaurant.dll
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\bin\Debug\netstandard2.0\ref\Restaurant.dll
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\bin\Debug\netstandard2.0\Restaurant.pdb
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Views\AdminViews\FoodDetailPage.xaml.g.cs
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Views\AdminViews\FoodsPage.xaml.g.cs
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Views\CustomViews\DetailAndOrderPage.xaml.g.cs
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Views\CustomViews\HomePage.xaml.g.cs
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Views\CustomViews\CartPage.xaml.g.cs
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Views\AdminViews\AdminShellPage.xaml.g.cs
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Views\AdminViews\StaffsPage.xaml.g.cs
+C:\Users\84398.DESKTOP-UQVPDHN\source\repos\Restaurant\Restaurant\obj\Debug\netstandard2.0\Views\CustomViews\CustomShellPage.xaml.g.cs

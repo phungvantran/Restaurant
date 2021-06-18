@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Restaurant.Views.FoodsPage"
+             x:Name="page"
+             BackgroundColor="Black"
+             Title="Danh sách món ăn">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Thêm" Command="{Binding AddFoodCommand}" />
+    </ContentPage.ToolbarItems>
+    <ListView 
+        Margin="10"
+			ItemsSource="{Binding Foods}" 
+			SelectedItem="{Binding SelectedFood, Mode=TwoWay}"
+			ItemSelected="OnContactSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ImageCell ImageSource="{Binding ImageUrl}" Text="{Binding Name}" Detail="{Binding Price}">
+                    <TextCell.ContextActions>
+                        <MenuItem 
+							Text="Xóa" 
+							IsDestructive="true" 
+							Command="{Binding Source={x:Reference page}, Path=ViewModel.DeleteFoodCommand}"
+							CommandParameter="{Binding .}" />
+                    </TextCell.ContextActions>
+                </ImageCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

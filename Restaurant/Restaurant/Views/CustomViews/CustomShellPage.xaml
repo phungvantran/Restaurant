@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Restaurant.Views"
+             x:Class="Restaurant.Views.CustomShellPage">
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Image Source="https://www.wallpapermaiden.com/wallpaper/18239/download/1366x768/anime-cafe-boy-fox-scenic-building.png"/>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    
+    <FlyoutItem Title="Trang chính" Icon="icon_home.png">
+        <ShellContent ContentTemplate="{DataTemplate local:HomePage }"/>
+    </FlyoutItem>
+  
+    <FlyoutItem Title="Phản hồi" Icon="icon_comment.png">
+        <ShellContent ContentTemplate="{DataTemplate local:HomePage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Đăng nhập" Icon="icon_login.png">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
+    </FlyoutItem>
+</Shell>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Restaurant.Views.LoginPage"
+             Title="Đăng nhập">
+    <AbsoluteLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds=".5,.5,300,150" AbsoluteLayout.LayoutFlags="PositionProportional" 
+                     >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tên:" 
+                       VerticalOptions="End" HorizontalOptions="StartAndExpand" TextColor="Black" FontAttributes="Bold"/>
+                <Entry WidthRequest="200"  Text="{Binding UserName,Mode=TwoWay}" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Mật khẩu:" HorizontalOptions="StartAndExpand" VerticalOptions="End" TextColor="Black" FontAttributes="Bold"/>
+                <Entry WidthRequest="200" Text="{Binding Pass,Mode=TwoWay}" TextColor="Black"/>
+            </StackLayout>
+            <Frame>
+                <Button Text="Đăng nhập" CornerRadius="10" BackgroundColor="Gray" Command="{Binding LoginCommand}"/>
+            </Frame>
+
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Restaurant.Views.FoodDetailPage"
+             Title="Chi tiết món ăn"
+             BackgroundColor="Black">
+    <StackLayout>
+        
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Row="0" Grid.ColumnSpan="2" Source="{Binding Source={x:Reference path},Path=Text}" Aspect="AspectFit"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Tên món ăn:" VerticalOptions="Center" FontSize="17" FontAttributes="Bold" />
+            <Label Grid.Row="2" Grid.Column="0" Text="Giá:" VerticalOptions="Center" FontSize="17" FontAttributes="Bold"/>
+            <Label Grid.Row="3" Grid.Column="0" Text="Số lượng có:" VerticalOptions="Center" FontSize="17" FontAttributes="Bold"/>
+            <Label Grid.Row="4" Grid.Column="0" Text="Đường dẫn hình ảnh" VerticalOptions="Center" FontSize="17" FontAttributes="Bold"/>
+            <Label Grid.Row="5" Grid.Column="0" Text="Mô tả" VerticalOptions="Center" FontSize="17" FontAttributes="Bold"/>
+
+            <Entry Grid.Row="1" Grid.Column="1" Text="{Binding Food.Name}" VerticalOptions="Center" />
+            <Entry Grid.Row="2" Grid.Column="1" Text="{Binding Food.Price}" VerticalOptions="Center" Keyboard="Numeric"/>
+            <Entry Grid.Row="3" Grid.Column="1" Text="{Binding Food.Amount}" VerticalOptions="Center" Keyboard="Numeric" />
+            <Entry Grid.Row="4" Grid.Column="1" Text="{Binding Food.ImageUrl}" x:Name="path" VerticalOptions="Center" />
+            <Entry Grid.Row="5" Grid.Column="1" Text="{Binding Food.Description}" VerticalOptions="Center" />
+        </Grid>
+       
+
+        <Button Text="Lưu" Command="{Binding SaveCommand}" WidthRequest="100" CornerRadius="20"/>
+    </StackLayout>
+</ContentPage>
